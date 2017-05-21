@@ -2,12 +2,12 @@
 	"actions": [
       {
         "description": "Default Welcome Denis Intent",
-        "name": "DENIS_TEST",
+        "name": "DenisHelloWorldAction",
         "fulfillment": {
           "conversationName": "HelloDenis"
         },
         "intent": {
-          "name": "actions.intent.DENIS_TEST",
+          "name": "DenisHelloWorldIntent",
           "trigger": {
             "queryPatterns": [
               "talk to DenisTest"
