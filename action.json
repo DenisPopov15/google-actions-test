@@ -1,0 +1,26 @@
+{
+	"actions": [
+      {
+        "description": "Default Welcome Denis Intent",
+        "name": "DENIS_TEST",
+        "fulfillment": {
+          "conversationName": "HelloDenis"
+        },
+        "intent": {
+          "name": "actions.intent.DENIS_TEST",
+          "trigger": {
+            "queryPatterns": [
+              "talk to DenisTest"
+            ]
+          }
+        }
+      }
+    ],
+    "conversations": {
+      "HelloDenis": {
+        "name": "HelloDenis",
+        "url": "https://google-actions-test.herokuapp.com"
+      }
+    }
+
+}
