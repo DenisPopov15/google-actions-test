@@ -1,0 +1,24 @@
+{
+  "name": "google-actions-test",
+  "version": "1.0.0",
+  "description": "Testing Google Homw",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenisPopov15/google-actions-test.git"
+  },
+  "author": "Denis Popov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenisPopov15/google-actions-test/issues"
+  },
+  "homepage": "https://github.com/DenisPopov15/google-actions-test#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2"
+  }
+}
