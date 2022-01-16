@@ -8,6 +8,7 @@ const PORT = process.env.PORT
 const app = express()
 
 app.post('/', (req, res) => {
+  console.log('Yeahh, its working')
   res.send('Hello World! 2022')
 })
 
