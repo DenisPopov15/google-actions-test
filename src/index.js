@@ -16,7 +16,7 @@ const assistantServicePublicKey = {
 
 app.post('/', (req, res) => {
   console.log('Yeahh, its working')
-  const auth = req.headers['google-assistant-signature']
+  const token = req.headers['google-assistant-signature']
   const decoded = jwt.verify(token, assistantServicePublicKey)
   console.log('decoded', decoded)
 
