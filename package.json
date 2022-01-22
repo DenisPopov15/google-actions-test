@@ -19,6 +19,7 @@
   "homepage": "https://github.com/DenisPopov15/google-actions-test#readme",
   "dependencies": {
     "dotenv": "^4.0.0",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "jsonwebtoken": "^8.5.1"
   }
 }
