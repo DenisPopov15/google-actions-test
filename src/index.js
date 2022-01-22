@@ -9,6 +9,8 @@ const app = express()
 
 app.post('/', (req, res) => {
   console.log('Yeahh, its working')
+  console.log('req!!', req)
+  console.log('req!!', JSON.stringify(req))
   res.send('Hello World! 2022')
 })
 
