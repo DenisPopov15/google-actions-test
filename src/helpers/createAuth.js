@@ -2,7 +2,7 @@
 
 const jwt = require('jsonwebtoken')
 const DEFAULT_EXP_IN_SECONDS = 60
-const { SERVICE_PRIVATE_KEY } = process.env
+let { SERVICE_PRIVATE_KEY } = process.env
 
 const createAuth = () => {
   const now = Math.floor(Date.now() / 1000)
@@ -14,7 +14,8 @@ const createAuth = () => {
     exp: expiresAt,
   }
 
-  const token = jwt.sign(payload, SERVICE_PRIVATE_KEY)
+  SERVICE_PRIVATE_KEY = SERVICE_PRIVATE_KEY.replace(/\\n/g, '\n')
+  const token = jwt.sign(payload, SERVICE_PRIVATE_KEY, { algorithm: 'RS256' })
 
   return token
 }
