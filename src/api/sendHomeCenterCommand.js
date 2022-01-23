@@ -14,6 +14,7 @@ const sendHomeCenterCommand = async(req, res) => {
   }
 
   console.log('url', HOME_CENTER_URL)
+  console.log('auth', auth)
   const response = await fetch(HOME_CENTER_URL, params)
   const data = await response.json()
   console.log('data', data)
