@@ -12,6 +12,8 @@ const sendHomeCenterCommand = async(req, res) => {
     body:    JSON.stringify({ command }),
     headers: { 'Content-Type': 'application/json', auth }
   }
+
+  console.log('url', HOME_CENTER_URL)
   const response = await fetch(HOME_CENTER_URL, params)
   const data = await response.json()
   console.log('data', data)
