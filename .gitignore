@@ -3,3 +3,5 @@ node_modules
 .env
 gactions
 creds.data
+.nyc_output
+coverage
